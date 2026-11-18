@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GTA Spoiler Blocker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <p class="eyebrow">Spoiler filter</p>
+        <h1>GTA Spoiler Blocker</h1>
+      </div>
+      <label class="switch" aria-label="Enable or disable the filter">
+        <input id="enabled" type="checkbox" role="switch" />
+        <span class="track"><span class="thumb"></span></span>
+      </label>
+    </header>
+
+    <main>
+      <p id="status" class="status">Checking...</p>
+
+      <div class="metric">
+        <span>Hidden on this page</span>
+        <strong id="count">—</strong>
+      </div>
+
+      <div class="actions">
+        <button id="rescan" type="button">Rescan</button>
+        <button id="reveal" type="button" class="primary" hidden>Reveal current video</button>
+        <button id="options" type="button">Options</button>
+      </div>
+
+      <p class="hint">Works on desktop YouTube. Reload the tab after installing or updating the extension.</p>
+    </main>
+
+    <script src="keywords.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

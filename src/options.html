@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Options · GTA Spoiler Blocker</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Spoiler filter</p>
+        <h1>GTA Spoiler Blocker</h1>
+        <p class="lead">Choose what should disappear from YouTube until you're ready to play.</p>
+      </header>
+
+      <form id="form">
+        <section class="panel">
+          <div class="row">
+            <div>
+              <h2>Enable filter</h2>
+              <p>Turn it off only if you want to see all GTA content.</p>
+            </div>
+            <label class="switch">
+              <input id="enabled" type="checkbox" role="switch" />
+              <span class="track"><span class="thumb"></span></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Scope</h2>
+          <label class="field">
+            <span>Blocking mode</span>
+            <select id="mode">
+              <option value="all">All GTA · maximum strictness</option>
+              <option value="six">GTA 6 only</option>
+              <option value="online">GTA 6 + GTA Online</option>
+            </select>
+          </label>
+          <p class="note">The recommended mode hides GTA 6, GTA V, GTA Online, Rockstar, Vice City, Leonida, and characters. It may hide unrelated content, such as topics named "Rockstar", "Lucia", or "Jason".</p>
+        </section>
+
+        <section class="panel">
+          <h2>Where to block</h2>
+          <label class="check"><input id="blockWatchPage" type="checkbox" /> Video pages (with a View anyway button)</label>
+          <label class="check"><input id="hideShorts" type="checkbox" /> Shorts</label>
+          <label class="check"><input id="hideComments" type="checkbox" /> Comments</label>
+          <label class="check"><input id="hideNotifications" type="checkbox" /> Notifications</label>
+          <label class="check"><input id="hideSuggestions" type="checkbox" /> Search suggestions</label>
+          <label class="check"><input id="hideChips" type="checkbox" /> YouTube chips and filters</label>
+        </section>
+
+        <section class="panel">
+          <h2>High-risk terms</h2>
+          <label class="check"><input id="includeRockstar" type="checkbox" /> Include standalone "Rockstar"</label>
+          <label class="check"><input id="includeLooseNames" type="checkbox" /> Include standalone "Lucia" and "Jason"</label>
+          <p class="note">Enabled by default so nothing slips through. These produce more false positives.</p>
+        </section>
+
+        <section class="panel">
+          <h2>Escape hatch</h2>
+          <label class="check"><input id="offerViewAnyway" type="checkbox" /> Show "View anyway" on video blocks</label>
+        </section>
+
+        <section class="panel">
+          <h2>Custom terms</h2>
+          <label class="field">
+            <span>One per line. Added to any mode.</span>
+            <textarea id="customKeywords" rows="5" placeholder="example: project america&#10;example: full spoiler"></textarea>
+          </label>
+        </section>
+
+        <footer class="footer">
+          <button id="reset" type="button">Restore defaults</button>
+          <span id="status" class="status">Changes are saved automatically.</span>
+        </footer>
+      </form>
+    </main>
+
+    <script src="keywords.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

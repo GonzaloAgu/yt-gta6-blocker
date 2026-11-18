@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "GTA 6 Spoiler Blocker",
+  "version": "1.0.0",
+  "description": "Hides GTA-related content on YouTube with a strict spoiler filter.",
+  "minimum_chrome_version": "110",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "action": {
+    "default_title": "GTA 6 Spoiler Blocker",
+    "default_popup": "src/popup.html"
+  },
+  "options_ui": {
+    "page": "src/options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["src/keywords.js", "src/matcher.js", "src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

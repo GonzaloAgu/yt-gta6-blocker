@@ -1,0 +1,190 @@
+.gta6-hidden {
+  display: none !important;
+}
+
+html[data-gta6-scanning="1"] ytd-watch-flexy,
+html[data-gta6-scanning="1"] ytd-shorts,
+html.gta6-blocked ytd-watch-flexy,
+html.gta6-blocked ytd-shorts {
+  visibility: hidden !important;
+}
+
+html[data-gta6="on"] ytd-rich-item-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-video-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-grid-video-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-compact-video-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-playlist-video-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-playlist-panel-video-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-playlist-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-grid-playlist-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-playlist-header-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-playlist-sidebar-primary-info-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-playlist-panel-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-channel-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-grid-channel-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-c4-tabbed-header-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-channel-header-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] page-header-view-model:not([data-gta6-checked]),
+html[data-gta6="on"] yt-page-header-view-model:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-search-header-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-engagement-panel-section-list-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-info-panel-content-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-info-panel-container-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-knowledge-panel-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-factoid-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-factoid-multiline-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-rich-metadata-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-clarification-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-reel-item-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-shorts-lockup-view-model:not([data-gta6-checked]),
+html[data-gta6="on"] ytm-shorts-lockup-view-model:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-reel-video-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-notification-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-comment-view-model:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-comment-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-post-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-backstage-post-thread-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-live-chat-text-message-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] yt-live-chat-text-message-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] yt-live-chat-paid-message-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-ad-slot-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-in-feed-ad-layout-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-promoted-sparkles-web-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-promoted-video-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-compact-promoted-video-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-display-ad-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-banner-promo-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-statement-banner-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-brand-video-shelf-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-brand-video-singleton-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-primetime-promo-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-search-pyv-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-movie-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-grid-movie-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-radio-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-compact-playlist-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-compact-radio-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] yt-lockup-view-model:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-miniplayer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-search-suggestion-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-suggestion-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] yt-chip-cloud-chip-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-shelf-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-rich-section-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-reel-shelf-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] ytd-rich-shelf-renderer:not([data-gta6-checked]),
+html[data-gta6="on"] grid-shelf-view-model:not([data-gta6-checked]) {
+  visibility: hidden !important;
+}
+
+html.gta6-blocked,
+html.gta6-blocked body {
+  overflow: hidden !important;
+}
+
+#gta6-block-overlay {
+  all: initial !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #0f0f0f !important;
+  color: #f1f1f1 !important;
+  font-family: Roboto, Arial, sans-serif !important;
+  padding: 24px !important;
+  box-sizing: border-box !important;
+  direction: ltr !important;
+}
+
+#gta6-block-overlay .gta6-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  max-width: 560px !important;
+  text-align: center !important;
+}
+
+#gta6-block-overlay .gta6-mark {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 56px !important;
+  height: 56px !important;
+  margin: 0 0 20px !important;
+  border-radius: 50% !important;
+  background: #c00 !important;
+  color: #fff !important;
+  font-family: Roboto, Arial, sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+#gta6-block-overlay .gta6-title {
+  display: block !important;
+  margin: 0 0 12px !important;
+  color: #f1f1f1 !important;
+  font-family: Roboto, Arial, sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+
+#gta6-block-overlay .gta6-text {
+  display: block !important;
+  margin: 0 0 24px !important;
+  color: #aaa !important;
+  font-family: Roboto, Arial, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+}
+
+#gta6-block-overlay .gta6-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  justify-content: center !important;
+}
+
+#gta6-block-overlay .gta6-button {
+  all: initial !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 40px !important;
+  padding: 0 18px !important;
+  border: 1px solid #717171 !important;
+  border-radius: 20px !important;
+  background: transparent !important;
+  color: #f1f1f1 !important;
+  font-family: Roboto, Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+}
+
+#gta6-block-overlay .gta6-button-primary {
+  border-color: #f1f1f1 !important;
+  background: #f1f1f1 !important;
+  color: #0f0f0f !important;
+}
+
+#gta6-block-overlay .gta6-button:hover {
+  background: #272727 !important;
+}
+
+#gta6-block-overlay .gta6-button-primary:hover {
+  background: #d9d9d9 !important;
+}
+
+#gta6-block-overlay .gta6-note {
+  display: block !important;
+  margin: 20px 0 0 !important;
+  color: #717171 !important;
+  font-family: Roboto, Arial, sans-serif !important;
+  font-size: 12px !important;
+}
