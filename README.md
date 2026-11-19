@@ -29,27 +29,11 @@ The last group is enabled by default because it is high-risk. It also creates mo
 
 ## Install
 
-### From a release (CRX)
-
-1. Open the repository's Releases page and download the latest `.crx` file.
-2. Open `chrome://extensions` in Chrome, Edge, Brave, or another Chromium browser.
-3. Enable **Developer mode**.
-4. Drag the `.crx` file onto the extensions page and confirm the install prompt.
-5. Reload any open YouTube tabs.
-
-Release CRX files are self-signed and are not distributed through the Chrome Web Store. Some Chrome versions and platforms block off-store extensions. If the CRX is blocked, use the unpacked installation below.
-
-To update a CRX install, download the new release and reinstall it. Sideloaded extensions may not update automatically.
-
-### From source (unpacked)
-
-Use this for development or when your browser blocks the CRX.
-
 1. Download or clone this repository.
 2. Open `chrome://extensions` in Chrome, Edge, Brave, or another Chromium browser.
 3. Enable **Developer mode**.
-4. Click **Load unpacked** and select the project folder containing `manifest.json`.
-5. Reload any open YouTube tabs.
+4. Click **Load unpacked** and select this project folder.
+5. Open YouTube and reload any open YouTube tabs.
 
 There is no build step and no dependency installation required for the extension itself.
 
